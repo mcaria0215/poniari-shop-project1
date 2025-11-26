@@ -280,13 +280,12 @@ body.no-scroll {
   position: fixed;
   width: 100%;
 }
-.mobile-menu-wrap {
+.mobile-menu-wrap {  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 100%;
-  height: 100%;
+  width: 100%;  
   background-color: var(--color-white);
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
@@ -295,7 +294,9 @@ body.no-scroll {
   transform: translateX(0);
 }
 .mobile-menu-content {
-  padding: 24px;
+  overflow-y: auto;
+  height: 100dvh;
+  padding: 24px 24px 120px;
 }
 .mobile-menu__header {
   display: flex;
@@ -307,12 +308,16 @@ body.no-scroll {
   font-weight: 900;
   font-size: 21px;
 }
+.mobile-menu__header .action-btn--close {
+  padding: 0;
+}
 .main-header__menu--mobile {
   text-align: left;
 }
 .main-header__menu--mobile a {
   display: block;
   padding: 14px 0;
+  font: 17px;
 }
 .mobile-menu__item {
   display: block;
@@ -320,8 +325,10 @@ body.no-scroll {
 .mobile-menu__item .main-header__link {  
   position: relative;
   z-index: 10;
+  font-weight: 600;
+  font-size: 19px;
 }
-.mobile-accordion__item .mobile-ico {
+.mobile-accordion__item svg {
   position: absolute;
   top: 50%;
   right: 0;
@@ -341,7 +348,7 @@ body.no-scroll {
 .mobile-accordion__item.is-active .mobile-accordion__content {  
   max-height: 500px;
 }
-.mobile-accordion__item.is-active .mobile-ico {  
+.mobile-accordion__item.is-active svg {  
   color: var(--color-accent);
   transform: translateY(-50%) rotate(45deg);  
 }
@@ -352,6 +359,33 @@ body.no-scroll {
   left: 0;
   width: 100%;
 }
+.mobile-menu__footer-list {
+  display: flex;  
+  align-items: center;
+}
+.mobile-menu__footer-item {
+  width: 50%;  
+}
+.mobile-menu__footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.mobile-menu__footer-link--login {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.mobile-menu__footer-link--join {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.mobile-menu__footer-link svg {
+  margin-right: 10px;
+}
+
 
 /* MediaQuery */
 @media (max-width: 1400px) {
