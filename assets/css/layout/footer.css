@@ -1,0 +1,100 @@
+/*
+    assets/css/layout/footer.css
+    BEM Block: main-footer
+*/
+
+/* 1. 푸터 전체 (.main-footer) */
+.main-footer {
+    background-color: var(--color-light-gray, #f8f8f8); /* 연한 배경색 사용 */
+    padding: var(--spacing-lg, 30px) 0;
+    color: var(--color-secondary); /* 텍스트는 보조 색상 (회색) 사용 */
+    font-size: 12px; /* 푸터 텍스트는 작게 */
+}
+
+/* 2. 컨테이너 (.main-footer__container) */
+.main-footer__container {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: 0 var(--layout-gap);
+    
+    /* 💡 Flexbox 적용: 정보 그룹과 소셜 그룹을 세로로 정렬 (모바일 대비) */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md, 20px);
+}
+
+/* 3. 정보 그룹 (약관, 연락처, 주소) */
+.main-footer__info-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm, 10px);
+}
+
+/* 4. 약관/정책 내비게이션 (.main-footer__link-nav) */
+.main-footer__menu {
+    display: flex; /* 링크들을 가로로 정렬 */
+    gap: var(--spacing-md, 20px);
+    margin-bottom: var(--spacing-sm, 10px);
+}
+
+.main-footer__menu a {
+    font-weight: 500;
+    color: var(--color-primary); /* 주요 링크는 일반 텍스트 색상 사용 */
+}
+
+/* 5. 주소/연락처 (.main-footer__address, .main-footer__contact) */
+.main-footer__address p,
+.main-footer__contact p {
+    margin-bottom: 2px;
+}
+
+/* 6. 추가 영역 (소셜 미디어 및 저작권) */
+.main-footer__extra-group {
+    padding-top: var(--spacing-sm, 10px);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between; /* 소셜 링크와 저작권을 양 끝으로 분리 */
+    align-items: center;
+}
+
+/* 7. 소셜 미디어 버튼 */
+.main-footer__social-links {
+    display: flex;
+    gap: var(--spacing-sm, 10px);
+}
+
+.social-btn i {
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+.social-btn:hover i {
+    color: var(--color-primary);
+}
+
+/* 8. 저작권 */
+.main-footer__copyright {
+    font-size: 11px;
+}
+
+/* 9. PC 환경에서 레이아웃 조정 (Media Query를 활용한 반응형 스타일) */
+/* 768px 이상 환경에서 주소와 소셜 버튼 위치 변경 */
+@media (min-width: 768px) {
+    .main-footer__container {
+        flex-direction: row; /* 정보 그룹과 추가 그룹을 가로로 정렬 */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .main-footer__info-group {
+        width: 60%; /* 정보 그룹이 더 많은 공간을 차지 */
+        gap: var(--spacing-md, 20px);
+    }
+
+    .main-footer__extra-group {
+        border-top: none;
+        padding-top: 0;
+        flex-direction: column; /* 소셜 링크와 저작권을 세로로 정렬 */
+        align-items: flex-end;
+    }
+}

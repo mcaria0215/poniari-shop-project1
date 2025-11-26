@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PONIARI-SHOP Project-1</title>  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  
+  <header class="main-header">
+    <div class="main-header__container">
+      <button class="btn btn--icon btn--transparent action-btn action-btn--menu" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+      </button>
+
+      <h1 class="main-header__logo">
+        <a href="index.html">PONIARI-SHOP</a>
+      </h1>
+      
+      <nav id="pc-nav" class="main-header__nav main-header__nav--pc">
+        <ul class="main-header__menu--pc">          
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">#TENNIS</a>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">#RUN</a>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Men</a>
+            <div class="main-header__sub-menu">
+              <div class="main-header__sub-menu-content">
+                <ul class="main-header__sub-menu-column main-header__sub-menu-column1">
+                  <li><a class="main-header__sub-menu-title" href="#">New</a></li>
+                  <li><a class="main-header__sub-menu-title" href="#">Best</a></li>
+                </ul>
+                <div class="main-header__sub-menu-column main-header__sub-menu-column2">
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">아우터</a></li>
+                    <li><a href="#">자켓</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">다운/패딩</a></li>
+                    <li><a href="#">플리스</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">상의</a></li>
+                    <li><a href="#">반팔티셔츠</a></li>
+                    <li><a href="#">긴팔티셔츠</a></li>
+                    <li><a href="#">슬리브리스</a></li>
+                    <li><a href="#">후드/맨투맨</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">하의</a></li>
+                    <li><a href="#">롱팬츠</a></li>
+                    <li><a href="#">숏팬츠</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Shoes</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Acc.</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Sports</a></li>
+                  </ul>
+                </div>                
+                <div class="main-header__sub-menu-image">                  
+                  <div class="main-header__sub-menu-images-list">
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/c2210b050a8afed444eea90221aa9077.png" alt="추천 코디 1">
+                    </a>
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/8810a4146af5b01c525ad249952395f9.png" alt="추천 코디 2">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Women</a>
+            <div class="main-header__sub-menu">
+              <div class="main-header__sub-menu-content">
+                <ul class="main-header__sub-menu-column main-header__sub-menu-column1">
+                  <li><a class="main-header__sub-menu-title" href="#">New</a></li>
+                  <li><a class="main-header__sub-menu-title" href="#">Best</a></li>                  
+                </ul>
+                <div class="main-header__sub-menu-column main-header__sub-menu-column2">
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">아우터</a></li>
+                    <li><a href="#">자켓</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">다운/패딩</a></li>
+                    <li><a href="#">플리스</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">상의</a></li>
+                    <li><a href="#">반팔티셔츠</a></li>
+                    <li><a href="#">긴팔티셔츠</a></li>
+                    <li><a href="#">슬리브리스</a></li>
+                    <li><a href="#">후드/맨투맨</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">하의</a></li>
+                    <li><a href="#">롱팬츠</a></li>
+                    <li><a href="#">숏팬츠</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Shoes</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Acc.</a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">Sports</a></li>
+                  </ul>
+                </div>                
+                <div class="main-header__sub-menu-image">                  
+                  <div class="main-header__sub-menu-images-list">
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/b8751b35206626e07ed4210a3a14fc51.png" alt="추천 코디 1">
+                    </a>
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/08ef20d29406756d399a0cc61bd5bddf.png" alt="추천 코디 2">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Shoes</a>
+            <div class="main-header__sub-menu">
+              <div class="main-header__sub-menu-content">
+                <ul class="main-header__sub-menu-column main-header__sub-menu-column1">
+                  <li><a class="main-header__sub-menu-title" href="#">New</a></li>
+                  <li><a class="main-header__sub-menu-title" href="#">Best</a></li>                  
+                </ul>
+                <div class="main-header__sub-menu-column main-header__sub-menu-column2">
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">헤리티지</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">라이프스타일</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">러닝</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">테니스</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">축구/풋살</a></li>
+                  </ul>
+                  <div class="sub-menu-banner">
+                    <p class="sub-menu-banner__title">Highlights</p>
+                    <ul class="sub-menu-banner__list">
+                      <li>
+                        <a href="#">
+                          <div class="sub-menu-banner__item-wrapper">
+                            <div class="sub-menu-banner__item-image-box">
+                              <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/8642261ac3fe076e2f4c7c643ef12236.png">
+                            </div>
+                            <div class="sub-menu-banner__item-text-box">
+                              <p>아토모스타</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sub-menu-banner__item-wrapper">
+                            <div class="sub-menu-banner__item-image-box">
+                              <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/8642261ac3fe076e2f4c7c643ef12236.png">
+                            </div>
+                            <div class="sub-menu-banner__item-text-box">
+                              <p>벨루나 로우 아톰</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sub-menu-banner__item-wrapper">
+                            <div class="sub-menu-banner__item-image-box">
+                              <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/a68706595b9d46c6ad294be4420a7f4c.png">
+                            </div>
+                            <div class="sub-menu-banner__item-text-box">
+                              <p>비아이콘 3 AG</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="sub-menu-banner__item-wrapper">
+                            <div class="sub-menu-banner__item-image-box">
+                              <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e4da3396d3add1d566cf28bf04e478c3.png">
+                            </div>
+                            <div class="sub-menu-banner__item-text-box">
+                              <p>블루실드 토르네오 3 AG</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>                  
+                </div>                
+                <div class="main-header__sub-menu-image">                  
+                  <div class="main-header__sub-menu-images-list">
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/87fe746d9c79b6a1df01171acc85944c.png" alt="추천 코디 1">
+                    </a>
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/8e5ab9d73f2daf6fc478837ece54450f.png" alt="추천 코디 2">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Acc.</a>
+            <div class="main-header__sub-menu">
+              <div class="main-header__sub-menu-content">
+                <ul class="main-header__sub-menu-column main-header__sub-menu-column1">
+                  <li><a class="main-header__sub-menu-title" href="#">New</a></li>
+                  <li><a class="main-header__sub-menu-title" href="#">Best</a></li>                  
+                </ul>
+                <div class="main-header__sub-menu-column main-header__sub-menu-column2">
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">가방</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">모자</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">양말</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">기타용품</a></li>
+                  </ul>             
+                </div>                
+                <div class="main-header__sub-menu-image">                  
+                  <div class="main-header__sub-menu-images-list">
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/d437b795222e2fe97daa81b951e5ff96.png" alt="추천 코디 1">
+                    </a>
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/acb87537ac3c0f4bff8711f4a2d3c288.png" alt="추천 코디 2">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Sport</a>
+            <div class="main-header__sub-menu">
+              <div class="main-header__sub-menu-content">
+                <ul class="main-header__sub-menu-column main-header__sub-menu-column1">
+                  <li><a class="main-header__sub-menu-title" href="#">New</a></li>
+                  <li><a class="main-header__sub-menu-title" href="#">Best</a></li>                  
+                </ul>
+                <div class="main-header__sub-menu-column main-header__sub-menu-column2">
+                  <ul>
+                    <li><a class="main-header__sub-menu-title" href="#">러닝</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">테니스</a></li>
+                    <li><a class="main-header__sub-menu-title" href="#">축구/풋살</a></li>
+                  </ul>             
+                </div>                
+                <div class="main-header__sub-menu-image">                  
+                  <div class="main-header__sub-menu-images-list">
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/688c7a1f83f8ce1a9df2d8fa5761775a.png" alt="추천 코디 1">
+                    </a>
+                    <a href="#">
+                      <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/3695bf14f463f02394845761c0960a7d.png" alt="추천 코디 2">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="main-header__menu--pc main-header__menu--pc--secondary">          
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Outlet</a>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Promotion</a>
+          </li>
+          <li class="pc-menu__item">
+            <a class="main-header__link" href="list.html">Lookbook</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-header__actions">
+        <button class="btn btn--icon btn--transparent action-btn action-btn--search" aria-label="검색">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </button>
+        <a href="#" class="action-btn btn--transparent action-btn--mypage" aria-label="마이페이지">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="#" class="action-btn btn--transparent action-btn--cart" aria-label="장바구니">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-header__search-box">
+      <div class="search-box__container">
+        <form id="search-form" action="list.html">
+          <fieldset>
+            <legend>검색</legend>
+            <div class="search-box__input-group">
+              <input id="keyword" class="search-box__field" name="keyword" placeholder="Search" autocomplete="off" value="" type="text">
+              <button class="btn btn--white btn--icon action-btn action-btn--search-keyword" aria-label="검색">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="search-box__hotkeyword">
+          <ul>
+            <li><a class="btn btn--black" href="list.html">베라파우마</a></li>
+            <li><a class="btn btn--black" href="list.html">아톰</a></li>
+            <li><a class="btn btn--black" href="list.html">코듀로이</a></li>
+            <li><a class="btn btn--black" href="list.html">플리스</a></li>
+            <li><a class="btn btn--black" href="list.html">러닝</a></li>
+            <li><a class="btn btn--black" href="list.html">테니스</a></li>
+          </ul>
+        </div>
+        <div class="search-box__close">
+          <button class="btn btn--transparent action-btn action-btn--keyword-close" aria-label="검색 닫기">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>      
+    </div>
+
+    <div class="mobile-menu-wrap" id="mobile-nav-menu">
+      <div class="mobile-menu-content">
+        
+        <div class="mobile-menu__header">
+            <h2 class="mobile-menu__logo">PONIARI-SHOP</h2>
+            <button class="btn btn--transparent action-btn action-btn--close" aria-label="메뉴 닫기">
+              <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="main-header__nav main-header__nav--mobile" id="mobile-nav">
+          <ul class="main-header__menu--mobile">           
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">#TENNIS</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">#RUN</a>
+            </li>  
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">New</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">Best</a>
+            </li>  
+            <li class="mobile-menu__item mobile-accordion__item">
+              <a class="main-header__link" href="#" role="button" aria-expanded="false">Men <i class="fa-solid fa-plus mobile-ico"></i></a>
+              <div class="mobile-menu__sub-menu mobile-accordion__content">
+                <div class="mobile-menu__sub-menu-content">
+                  <ul class="mobile-sub-list">
+                    <li><a href="list.html">ALL</a></li>
+                    <li><a href="list.html">아우터</a></li>
+                    <li><a href="list.html">상의</a></li>
+                    <li><a href="list.html">하의</a></li>
+                    <li><a href="list.html">Shoes</a></li>
+                    <li><a href="list.html">Acc.</a></li>
+                    <li><a href="list.html">Sports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-menu__item mobile-accordion__item">
+              <a class="main-header__link" href="#" role="button" aria-expanded="false">Women <i class="fa-solid fa-plus mobile-ico"></i></a>
+              <div class="mobile-menu__sub-menu mobile-accordion__content">
+                <div class="mobile-menu__sub-menu-content">
+                  <ul class="mobile-sub-list">
+                    <li><a href="list.html">ALL</a></li>
+                    <li><a href="list.html">아우터</a></li>
+                    <li><a href="list.html">상의</a></li>
+                    <li><a href="list.html">하의</a></li>
+                    <li><a href="list.html">Shoes</a></li>
+                    <li><a href="list.html">Acc.</a></li>
+                    <li><a href="list.html">Sports</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-menu__item mobile-accordion__item">
+              <a class="main-header__link" href="#" role="button" aria-expanded="false">Shoes <i class="fa-solid fa-plus mobile-ico"></i></a>
+              <div class="mobile-menu__sub-menu mobile-accordion__content">
+                <div class="mobile-menu__sub-menu-content">
+                  <ul class="mobile-sub-list">
+                    <li><a href="list.html">ALL</a></li>
+                    <li><a href="list.html">헤리티지</a></li>
+                    <li><a href="list.html">라이프스타일</a></li>
+                    <li><a href="list.html">러닝</a></li>
+                    <li><a href="list.html">테니스</a></li>
+                    <li><a href="list.html">축구/풋살</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-menu__item mobile-accordion__item">
+              <a class="main-header__link" href="#" role="button" aria-expanded="false">Acc. <i class="fa-solid fa-plus mobile-ico"></i></a>
+              <div class="mobile-menu__sub-menu mobile-accordion__content">
+                <div class="mobile-menu__sub-menu-content">
+                  <ul class="mobile-sub-list">
+                    <li><a href="list.html">ALL</a></li>
+                    <li><a href="list.html">가방</a></li>
+                    <li><a href="list.html">모자</a></li>
+                    <li><a href="list.html">양말</a></li>
+                    <li><a href="list.html">기타용품</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="mobile-menu__item mobile-accordion__item">
+              <a class="main-header__link" href="#" role="button" aria-expanded="false">Sport <i class="fa-solid fa-plus mobile-ico"></i></a>
+              <div class="mobile-menu__sub-menu mobile-accordion__content">
+                <div class="mobile-menu__sub-menu-content">
+                  <ul class="mobile-sub-list">
+                    <li><a href="list.html">ALL</a></li>
+                    <li><a href="list.html">러닝</a></li>
+                    <li><a href="list.html">테니스</a></li>
+                    <li><a href="list.html">축구/풋살</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>            
+          </ul>
+          <ul class="main-header__menu--mobile main-header__menu2--mobile">
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">Outlet</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">Promotion</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">Lookbook</a>
+            </li>
+          </ul>
+          <ul class="main-header__menu--mobile main-header__menu3--mobile">
+            <li class="mobile-menu__item">
+              <a class="main-header__link" href="list.html">Store Info.</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__footer">
+          <ul>
+            <li><a href="#" class="mobile-menu__footer-link mobile-menu__footer-link--login">로그인</a></li>
+            <li><a href="#" class="mobile-menu__footer-link mobile-menu__footer-link--join">회원가입</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="visual-section">
+      <h2 class="sr-only">메인 비주얼 슬라이드</h2>
+      <div class="main-visual">
+        <div class="swiper-container">
+          <ul class="visual-list swiper-wrapper">
+            <li class="visual-list__item swiper-slide">
+              <a href="#" class="visual-slide__link-wrap">
+                <div class="visual-slide__text-area"> 
+                  <p class="visual-slide__title">WARM TOUCH DENIM</p>
+                  <p class="visual-slide__subtitle">2025 FW 기모데님 출시</p>                    
+                  <div class="visual-slide__button">
+                    View More + 
+                    <span class="visual-slide__link-line"></span>
+                  </div>
+                </div>
+                <div class="visual-slide__image">
+                  <img src="https://guesskorea.com/web/upload/NNEditor/20251120/a68b039795ea4454b938bc89001be724.jpg" alt="따뜻한 터치감의 기모 데님 화보">
+                </div>
+              </a>
+            </li>
+            <li class="visual-list__item swiper-slide">
+              <a href="#" class="visual-slide__link-wrap">
+                <div class="visual-slide__text-area"> 
+                  <p class="visual-slide__title">WARM TOUCH DENIM</p>
+                  <p class="visual-slide__subtitle">2025 FW 기모데님 출시</p>                    
+                  <div class="visual-slide__button">
+                    View More + 
+                    <span class="visual-slide__link-line"></span>
+                  </div>
+                </div>
+                <div class="visual-slide__image">
+                  <img src="https://guesskorea.com/web/upload/NNEditor/20251030/a5f3a9e1aac85497c3cd841abad3333c.jpg" alt="따뜻한 터치감의 기모 데님 화보">
+                </div>
+              </a>
+            </li>
+            <li class="visual-list__item swiper-slide">
+              <a href="#" class="visual-slide__link-wrap">
+                <div class="visual-slide__text-area"> 
+                  <p class="visual-slide__title">WARM TOUCH DENIM</p>
+                  <p class="visual-slide__subtitle">2025 FW 기모데님 출시</p>                    
+                  <div class="visual-slide__button">
+                    View More + 
+                    <span class="visual-slide__link-line"></span>
+                  </div>
+                </div>
+                <div class="visual-slide__image">
+                  <img src="https://guesskorea.com/web/upload/NNEditor/20250828/c459c7ed36ff431a090155715565aa69.jpg" alt="따뜻한 터치감의 기모 데님 화보">
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="banner-section">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://diadorakorea.com/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/e225e7c1ca46d92f55833a6b621fafcc.png">
+            <div class="banner-section__text_bg">
+              <div class="banner-section__text">
+                <dl>
+                  <dt>몬텔로 코듀로이 자켓</dt>
+                  <dd><span>209,000원</span></dd>
+                </dl>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section> -->
+
+    <section class="product-section product-section--best">
+      <div class="product-section__title-area"> 
+        <h2 class="product-section__heading">
+          금주의 베스트 상품
+          <span class="product-section__subtitle">지금 주목할 만한 키워드</span>
+        </h2>         
+        <p class="product-section__tag-list">
+          <span class="product-section__tag-item">#다운자켓</span>
+          <span class="product-section__tag-item">#SET-UP</span>
+          <span class="product-section__tag-item">#방한</span>
+        </p> 
+      </div>     
+      
+      <div class="swiper-container">
+        <ul class="product-list swiper-wrapper">
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-scrollbar"></div>
+      </div>  
+    </section>
+    
+    <section class="product-section product-section--new">
+      <div class="product-section__title-area"> 
+        <h2 class="product-section__heading">
+          금주의 베스트 상품
+          <span class="product-section__subtitle">지금 주목할 만한 키워드</span>
+        </h2>         
+        <p class="product-section__tag-list">
+          <span class="product-section__tag-item">#다운자켓</span>
+          <span class="product-section__tag-item">#SET-UP</span>
+          <span class="product-section__tag-item">#방한</span>
+        </p> 
+      </div>     
+      
+      <div class="swiper-container">
+        <ul class="product-list swiper-wrapper">
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product-list__item swiper-slide">
+            <a href="detail.html" class="product-card">
+              <figure class="product-card__figure">
+                <img src="https://diadorakorea.com/web/product/medium/202510/47aca6ee3e0efe1051ad59e8a4f7b790.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img">
+                <img src="https://diadorakorea.com/web/product/small/202510/578537dcfb5588ffa2449d4d4966ef1d.jpg" alt="상품명: 컴피 기모 맨투맨 MELANGE GREY" class="product-card__img product-card__img-hover">
+              </figure>              
+              <div class="product-card__info">
+                <p class="product-card__brand">BRAND NAME</p>
+                <h3 class="product-card__name">컴피 기모 맨투맨 MELANGE GREY</h3>
+                <div class="product-card__price-group">
+                  <span class="product-card__sale">45% OFF</span>
+                  <span class="product-card__price">68,000원</span>                
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-scrollbar"></div>
+      </div>  
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__info-group">
+        <nav class="main-footer__link-nav">
+          <ul class="main-footer__menu">
+            <li class="main-footer__item"><a href="#">회사소개</a></li>
+            <li class="main-footer__item"><a href="#">이용약관</a></li>
+            <li class="main-footer__item"><a href="#">**개인정보처리방침**</a></li>
+            <li class="main-footer__item"><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+          
+        <div class="main-footer__contact">
+          <p>고객센터: 1588-XXXX (평일 9:00 ~ 18:00)</p>
+          <p>이메일: example@ecommerce.com</p>
+        </div>
+          
+        <address class="main-footer__address">
+          <p>상호명: (주)이커머스 클론 | 대표: 김개발</p>
+          <p>주소: 서울특별시 강남구 테헤란로 123</p>
+          <p>사업자등록번호: XXX-XX-XXXXX | 통신판매업신고: 제2024-서울강남-0000호</p>
+        </address>
+      </div>
+      
+      <div class="main-footer__extra-group">
+        <div class="main-footer__social-links">
+          <a href="#" class="social-btn" aria-label="인스타그램"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="페이스북"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="유튜브"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+        <p class="main-footer__copyright">
+          &copy; <span id="currentYear">2025</span> E-COMMERCE CLONE. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/common.js"></script>
+</body>
+</html>

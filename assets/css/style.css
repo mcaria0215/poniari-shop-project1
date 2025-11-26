@@ -1,0 +1,10 @@
+@import url('./base/reset.css');
+@import url('./base/base.css');
+@import url('./base/variables.css');
+@import url('./components/button.css');
+
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+@import url('./components/product-card.css');
+@import url('./components/slider.css');
