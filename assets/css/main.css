@@ -283,10 +283,13 @@ main section {
 
   .product-showcase-warpper {
     display: block;
-  }
+  }  
   .product-showcase__banner,
   .product-showcase__content {
     width: 100%;
+  }
+  .product-showcase__content {
+    padding: 20px; 
   }
   .product-showcase__banner-image {
     height: 300px;    
