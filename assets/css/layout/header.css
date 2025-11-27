@@ -19,7 +19,7 @@ body.main .main-header {
   align-items: center;
   position: relative;
   z-index: 20;
-  padding: 0 40px;  
+  padding: 0 3%;  
   transition: background 0.3s ease-in-out;
 }
 .main-header.is-active .main-header__container {
@@ -28,7 +28,7 @@ body.main .main-header {
 
 .main-header__logo {
   font-weight: 900;
-  font-size: 21px;
+  font-size: 24px;
   letter-spacing: -0.5px;
 }
 .main-header__nav {
@@ -429,7 +429,14 @@ body.no-scroll {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
+  .main-header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 21px;
+    transform: translate(-50%, -50%);
+  }
   .main-header__container {
     padding: 20px 16px;
   }
@@ -456,5 +463,13 @@ body.no-scroll {
   }
   .action-btn--keyword-close {
     padding: 0;
+  }
+  .main-header__actions a,
+  .main-header__actions button,
+  .action-btn--menu {
+    height: 24px;
+  }
+  .action-btn--mypage {
+    display: none;
   }
 }

@@ -68,3 +68,11 @@ textarea {
   height: 34px;
   stroke-width: 1px;
 }
+
+
+@media (max-width: 768px) {
+  .action-btn svg {
+    width: 24px;
+    height: 24px;    
+  }
+}
