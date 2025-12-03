@@ -1,0 +1,126 @@
+.mobile-bottom-sheet-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);     
+  transition: background-color 0.3s, visibility 0s 0.3s;
+}
+.mobile-bottom-sheet {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 80%;
+  background: white;
+  border-radius: 20px 20px 0 0;  
+  box-sizing: border-box;
+  transform: translateY(100%); 
+  transition: transform 0.3s ease-out;
+}
+.mobile-bottom-sheet-overlay.is-active {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: background-color 0.3s;
+}
+.mobile-bottom-sheet-overlay.is-active .mobile-bottom-sheet {
+  transform: translateY(0);
+}
+
+.mobile-fixed-actions {
+  display: flex;  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;  
+  background: #fff;  
+}
+.mobile-fixed-actions button {  
+  min-width: 0;
+  height: 52px;
+  padding: 0;
+  border: 0;
+  background-color: var(--color-primary);
+  color: #fff;  
+}
+.product-action__wish-btn {
+  flex-grow: 1;
+}
+.product-action__wish-btn svg {
+  color: var(--color-accent);
+}
+.mobile-fixed-actions .product-action__buy-now-btn {
+  flex-grow: 2; 
+  border-left: 1px solid #fff;
+}
+
+@media (min-width: 769px) {
+  .mobile-bottom-sheet-overlay,
+  .mobile-fixed-actions {
+    display: none;
+  }  
+}
+@media (max-width: 768px) {  
+  .review-summary__main {
+    margin-bottom: var(--spacing-md);
+    padding: 0 16px;
+  }
+  .review-summary__score {
+    padding-right: 10px;
+    border: 0;
+  }
+  .review-score__star,
+  .review-score__value {
+    font-size: var(--font-size-md);
+  }
+  .review-score__satisfaction {
+    display: none;
+  }
+  .review-score__write-btn {
+    margin: 10px 0 0;
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+  .review-summary__distribution {
+    padding-left: 10px;
+  }
+  .review-distribution__item {
+    font-size: 12px;
+  }
+  .review-distribution__item {
+    margin: 0 0 4px;
+  }
+  .distribution__bar-container {
+    height: 4px;
+  }
+
+  .review-summary__filter-search,
+  .review-list {
+    margin: 0 16px;
+  }
+
+  .review-summary__filter-search {
+    padding: 8px 0;
+  }
+  .review-summary__filter-options button {
+    font-size: 12px;
+  }
+
+  .review-list__body {
+    font-size: 14px;
+  }
+  .review-meta__rating {
+    font-size: var(--font-size-sm);
+  }
+  .review-body__option,
+  .review-meta__user-info,
+  .review-tag__item,
+  .review-list__actions {
+    font-size: var(--font-size-xs);
+  }  
+}

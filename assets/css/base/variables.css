@@ -1,9 +1,10 @@
 :root {  
   --color-primary: #111;
   --color-secondary: #444;
+  --color-deep-gray: #777;
   --color-gray: #999;
   --color-light-gray: #f8f8f8;
-  --color-accent: #ff4757;
+  --color-accent: #008000;
   --color-white: #fff;
   --color-border: #eee;
   
@@ -24,6 +25,11 @@
   --spacing-md: 20px;
   --spacing-sm: 10px;
   --spacing-xs: 5px;
+
+  --border-radius-base: 20px;
+  --border-radius-lg: 25px;
+  --border-radius-sm: 15px;
+  --border-radius-xs: 5px;
 }
 body {
   font-family: var(--font-family-base);

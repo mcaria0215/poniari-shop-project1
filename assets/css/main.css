@@ -2,9 +2,10 @@
 /* common */
 main section {
   max-width: var(--layout-max-width);
-  margin: var(--spacing-xl) auto;
+  margin: var(--spacing-xl) auto calc(var(--spacing-xl) + 10px);
 }
 .title-area {    
+  position: relative;
   max-width: var(--layout-max-width);
   margin: 0 auto 30px;    
 }
@@ -27,7 +28,7 @@ main section {
   display: inline-block;
   padding: 4px 10px;
   border: 1px solid var(--color-border, #ddd);
-  border-radius: 20px;
+  border-radius: var(--border-radius-base);
   font-size: 13px;
   font-weight: 500;
   color: var(--color-primary);
@@ -140,7 +141,41 @@ main section {
 }
 
 
+/* wide-banner-section */
+main section.wide-banner-section {
+  max-width: 100%;
+}
+.wide-banner-section__link {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+}
+.wide-banner-section__text-area {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;  
+  color: #fff;
+}
+.wide-banner-section__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+.wide-banner-section__subtitle {
+  font-size: 18px;
+}
+
+
 /* product-list */
+.title-area__button {
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+.title-area__link {
+  padding: 10px 30px;
+  border-radius: 30px;
+}
 .product-list.swiper-wrapper {    
   display: flex; 
   grid-template-columns: unset;
@@ -153,7 +188,7 @@ main section {
 .product-showcase-warpper {
   display: flex;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: var(--border-radius-lg);
 }
 .product-showcase__banner {  
   flex-shrink: 0;
@@ -206,12 +241,12 @@ main section {
 @media (max-width: 1400px) {
   main section {
     max-width: 100%;
-    padding: 0 24px;    
-  }    
+    padding: 0 24px;
+  }
 }
 @media (max-width: 1024px) { 
   main section {
-    margin: var(--spacing-lg) auto;
+    margin: var(--spacing-lg) auto calc(var(--spacing-lg) + 5px);
   } 
   .visual-slide__image-pc {
     display: none;
@@ -281,6 +316,20 @@ main section {
     font-size: var(--font-size-base);
   }
 
+  .wide-banner-section {
+    padding: 0;
+  }
+  .wide-banner-section__title {   
+    margin-bottom: 0;
+    font-size: var(--font-size-md);
+  }
+  .wide-banner-section__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .product-showcase-section {
+    padding: 0;
+  }
   .product-showcase-warpper {
     display: block;
   }  

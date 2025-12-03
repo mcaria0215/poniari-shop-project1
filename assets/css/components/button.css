@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
+  border: 1px solid transparent;
   border-radius: 5px;
   font-size: var(--font-size-base);
   font-weight: 400;  
@@ -10,6 +11,18 @@
   text-align: center;
   white-space: nowrap;  
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn--border-radius {  
+  padding: 0 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  background-color: #fff;
+  line-height: 40px;
+}
+.btn--border-radius:hover {    
+  background-color: var(--color-primary);  
+  border-color: var(--color-primary);  
+  color: #fff;
 }
 .btn--icon {
   padding: 0;  
@@ -47,8 +60,12 @@
 
 .btn--black {
   background-color: var(--color-primary);
-  color: var(--color-white);
-  border: 0;
+  color: var(--color-white); 
+}
+.btn--black:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .btn--transparent {
@@ -59,4 +76,25 @@
 
 .btn--transparent:hover {
  color: var(--color-accent);
+}
+
+.select-warpper {
+  position: relative;
+  width: 150px;
+  padding-right: 30px;
+}
+.select-warpper::after {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  right: 10px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  color: #555;
+  width: 30px;
+  height: 30px;
+
+  background-image: url(https://unpkg.com/lucide-static@latest/icons/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
 }

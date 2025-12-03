@@ -10,7 +10,7 @@
 body.main .main-header {
   position: fixed;
 }
-.main-header.is-hidden-by-scroll {
+body.is-hidden-by-scroll .main-header {
   transform: translateY(-100%);
 }
 .main-header__container {  
@@ -193,6 +193,7 @@ body.main .main-header {
   border-radius: 5px;
 }
 input[type=text].search-box__field {
+  height: 50px;
   background-color: #fff;
   border: 0;
 }

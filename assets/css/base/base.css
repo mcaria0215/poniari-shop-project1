@@ -14,15 +14,14 @@ legend {
   white-space: nowrap;
 }
 
-/* 모든 텍스트 및 비밀번호 입력 필드의 기본 스타일 */
 input[type=text], 
 input[type=password],
 input[type=email],
 input[type=search],
 textarea,
 select {  
-  min-height: 50px; 
-  line-height: 50px;
+  min-height: 42px; 
+  line-height: 40px;
   padding: 0 14px;
   border: 1px solid var(--color-border);
   border-radius: 5px;
@@ -30,9 +29,10 @@ select {
   color: var(--color-primary);
   font-size: var(--font-size-sm);
   width: 100%;
-  box-sizing: border-box; /* 패딩과 보더가 width에 포함되도록 */
+  box-sizing: border-box; 
   vertical-align: middle;
   transition: border-color 0.2s, background-color 0.2s;
+  cursor: pointer;
 }
 
 input[type=text]:focus, 
@@ -41,12 +41,17 @@ input[type=email]:focus,
 input[type=search]:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--color-accent);
-  outline: none; /* 브라우저 기본 포커스 아웃라인 제거 */
+  border-color: var(--color-primary);
+  outline: none;
 }
 ::placeholder {
   color: var(--color-gray);
   opacity: 1;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
 }
 textarea {
   line-height: 1.5;
@@ -69,7 +74,13 @@ textarea {
   stroke-width: 1px;
 }
 
+main.page-container {
+  overflow: hidden;
+}
 
+.lucide {
+  stroke-width: 1px;
+}
 @media (max-width: 768px) {
   .action-btn svg {
     width: 24px;

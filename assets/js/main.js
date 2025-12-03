@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const mainVisualSwiper = new Swiper('.main-visual > .swiper-container', {
     loop: true,      
     autoplay: {
-      delay: 500000, 
+      delay: 1000 * 7, 
       disableOnInteraction: false,
     },
     scrollbar: {
@@ -26,12 +26,31 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 4,
         spaceBetween: 24, 
       },      
-      1200: {
+      1280: {
         slidesPerView: 4,
         spaceBetween: 30,
       }
     }           
   });
+
+  const wideBannerSectionSwiper = new Swiper('.wide-banner-section > .swiper-container', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,    
+    breakpoints: {          
+      768: {
+        slidesPerView: 2.2,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 3.2,
+        spaceBetween: 20,
+      },
+      1920: {
+        slidesPerView: 3.8,
+        spaceBetween: 20,
+      }
+    }    
+  })
 
   const productShowcaseSwiper = new Swiper('.product-showcase__list', {
     loop: true,

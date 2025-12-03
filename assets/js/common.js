@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   } 
 
+  const BODY = document.querySelector('body');
   const mainHeader = document.querySelector('.main-header');
   const HIDE_CLASS = 'is-hidden-by-scroll';
   let lastScrollY = window.scrollY;
@@ -26,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
       
       if (currentScrollY > headerHeight + 20) {           
         if (scrollDelta > 0) {            
-          mainHeader.classList.add(HIDE_CLASS);
-          mainHeader.classList.remove('is-active');             
+          BODY.classList.add(HIDE_CLASS);
+          BODY.classList.remove('is-active');             
         } else if (scrollDelta < 0) {            
-          mainHeader.classList.remove(HIDE_CLASS);
+          BODY.classList.remove(HIDE_CLASS);
         }
       } else {          
-        mainHeader.classList.remove(HIDE_CLASS);
+        BODY.classList.remove(HIDE_CLASS);
       }
       
       lastScrollY = currentScrollY;        
