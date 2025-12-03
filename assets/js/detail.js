@@ -47,6 +47,40 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
 
+  // top btn  
+  const scrollButton = document.getElementById('topScrollBtn');
+  const VISIBLE_CLASS = 'is-visible';
+  const SCROLL_THRESHOLD = 400;
+
+  const scrollToTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  }
+
+  if (scrollButton) {    
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > SCROLL_THRESHOLD) {            
+        scrollButton.classList.add(VISIBLE_CLASS);
+      } else {            
+        scrollButton.classList.remove(VISIBLE_CLASS);
+      }
+    }, { passive: true });
+    
+    scrollButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      scrollToTop();
+    });   
+    
+    if (window.scrollY > SCROLL_THRESHOLD) {
+      scrollButton.classList.add(VISIBLE_CLASS);
+    }
+  }
+
+  
   // mobile thumb swiper
   let thumbnailSwiper = undefined;
   const mobileBreakpoint = 768;

@@ -2,6 +2,10 @@
   border-bottom: 1px solid var(--color-primary);
   background-color: #fff;
 }
+main.page-container {
+  overflow: visible;
+}
+
 .product-detail-wrapper {
   max-width: var(--layout-max-width);  
   margin: 0 auto;
@@ -131,10 +135,16 @@
 
 /* detail tabs */
 .product-detail__product-tabs {  
-  margin: 0 3%;  
+  position: sticky;
+  top: 101px;
+  left: 0;  
+  z-index: 999;  
+
+  width: 100%;  
   border-bottom: 1px solid var(--color-border);  
   background-color: #fff;
-  transition: transform 0.3s ease-in-out;  
+
+  transition: top 0.3s ease-in-out;
 }
 .product-tabs__list {
   display: flex;  
@@ -160,18 +170,10 @@
   font-weight: 700;
   color: #000;    
 }
-.product-detail__product-tabs.is-sticky {
-  position: fixed;
-  top: 101px;
-  left: 0;  
-  z-index: 999;  
-  width: 100%;
-  margin: 0;
+body.is-hidden-by-scroll .product-detail__product-tabs {
+  top: 0;
+   /* 부드러운 전환을 위해 transition 추가 */
 }
-.is-hidden-by-scroll .product-detail__product-tabs.is-sticky {
-  transform: translateY(-101px);
-}
-
 
 /* detail content */
 .product-detail__product-content {
@@ -235,6 +237,43 @@
 }
 .guide__detail-desc p:last-child {
   padding-bottom: 0;
+}
+
+
+/* top btn */
+.top-scroll-btn {    
+  position: fixed;
+  bottom: 30px;   
+  right: 30px;    
+  z-index: 10;  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* 기본적으로 숨김 상태 (opacity 0) */
+  opacity: 0;
+  visibility: hidden;
+  /* 부드러운 노출/숨김 애니메이션 */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* [Modifier] 버튼이 스크롤에 의해 노출될 때 */
+.top-scroll-btn.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* [Element] 아이콘 요소 스타일 */
+.top-scroll-btn__icon {
+    /* flex 컨테이너 중앙에 배치되도록 별다른 스타일이 필요 없을 수 있음 */
+    /* 아이콘 색상 설정 (예시) */
+    color: var(--color-primary, #333); 
+    font-size: 24px;
 }
 
 
@@ -324,5 +363,10 @@
   .guide__detail-list,
   .guide__detail-term {
     font-size: var(--font-size-xs);
+  }
+
+  .top-scroll-btn {
+    bottom: 70px;
+    right: 16px;
   }
 }
