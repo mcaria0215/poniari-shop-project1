@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const BODY = document.querySelector('body');
   const mainHeader = document.querySelector('.main-header');
   const HIDE_CLASS = 'is-hidden-by-scroll';
+  const IS_SCROLLING_UP = 'is-scroll-up';
   let lastScrollY = window.scrollY;
+
   if (mainHeader) {
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
@@ -28,16 +30,52 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentScrollY > headerHeight + 20) {           
         if (scrollDelta > 0) {            
           BODY.classList.add(HIDE_CLASS);
+          BODY.classList.remove(IS_SCROLLING_UP);
           BODY.classList.remove('is-active');             
         } else if (scrollDelta < 0) {            
           BODY.classList.remove(HIDE_CLASS);
+          BODY.classList.add(IS_SCROLLING_UP);
         }
       } else {          
         BODY.classList.remove(HIDE_CLASS);
+        BODY.classList.remove(IS_SCROLLING_UP);
       }
       
       lastScrollY = currentScrollY;        
     }, { passive: true });
+  }
+
+   // top btn  
+  const scrollButton = document.getElementById('topScrollBtn');
+  const VISIBLE_CLASS = 'is-visible';
+  const SCROLL_THRESHOLD = 400;
+
+  const scrollToTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  }
+
+  if (scrollButton) {    
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > SCROLL_THRESHOLD) {            
+        scrollButton.classList.add(VISIBLE_CLASS);
+      } else {            
+        scrollButton.classList.remove(VISIBLE_CLASS);
+      }
+    }, { passive: true });
+    
+    scrollButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      scrollToTop();
+    });   
+    
+    if (window.scrollY > SCROLL_THRESHOLD) {
+      scrollButton.classList.add(VISIBLE_CLASS);
+    }
   }
 
   // ----------------------------------------------------
