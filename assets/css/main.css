@@ -520,3 +520,14 @@ main section.wide-banner-section {
     transform: translateY(0)
   }
 }
+@media (max-width: 420px) {
+  .banner-section__title,
+  .banner-section__price {
+    font-size: var(--font-size-sm);
+  }
+  .banner-section__text-area {
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+  }
+}

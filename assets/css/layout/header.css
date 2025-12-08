@@ -448,12 +448,15 @@ body.no-scroll {
     left: 50%;
     font-size: 21px;
     transform: translate(-50%, -50%);
-  }
+  }  
   .main-header__container {
     padding: 20px 16px;
   }
   .main-header__actions {
     gap: 10px;
+  }
+  .main-header__search-box.is-open {
+    transform: translateY(64px);
   }
   .main-header__search-box {
     padding: 20px 16px 30px;
@@ -483,5 +486,15 @@ body.no-scroll {
   }
   .action-btn--mypage {
     display: none;
+  }
+}
+@media (max-width: 420px) {
+  .main-header__logo {
+    font-size: 18px;
+  }
+  input[type=text].search-box__field,
+  .action-btn--search-keyword,
+  .action-btn--keyword-close {
+    height: 40px;    
   }
 }
